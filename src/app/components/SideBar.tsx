@@ -7,7 +7,7 @@ import SideItem from './SideItem';
 
 const SideBar: React.FC = () => {
   return (
-    <aside className="w-72 h-full bg-white p-4">
+    <aside className="lg:w-72 w-auto md:w-24 h-full bg-white p-4">
       <h2 className="text-2xl font-bold mb-4">
         <Image src={Logo} alt='Edupath Logo'/>
       </h2>

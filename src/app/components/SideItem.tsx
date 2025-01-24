@@ -16,11 +16,11 @@ const SideItem: React.FC<SideItemProps> = ({ name, icon, href }) => {
     <li className="relative group">
       <a
         href={href}
-        className={`block text-black py-2 px-3 rounded flex items-center
+        className={`text-black py-2 md:justify-center justify-center lg:justify-start px-3 rounded items-center flex
           ${isActive ? 'bg-customLightBlue' : 'hover:bg-customLightBlue'}`} // Apply active styles
       >
-        <span className="text-xl mr-3">{icon}</span>
-        <span className="text-lg">{name}</span>
+        <span className="text-xl lg:mr-3 m-0">{icon}</span>
+        <span className="text-lg hidden md:hidden lg:flex   ">{name}</span>
         <span className="absolute left-full ml-2 hidden group-hover:block text-sm bg-gray-700 text-white rounded p-1">
           {name}
         </span>
