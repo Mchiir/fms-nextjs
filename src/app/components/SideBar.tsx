@@ -16,7 +16,7 @@ const SideBar: React.FC = () => {
           {sideItems.slice(0, -1).map((item) => (
             <SideItem key={item.name} {...item} />
           ))}
-                  <div className="mt-auto  flex flex-col">
+                  <div className="mt-auto lg:w-full  flex flex-col">
         <SideItem key={sideItems[sideItems.length - 1].name} {...sideItems[sideItems.length - 1]} />
       </div>
         </ul>

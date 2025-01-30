@@ -13,10 +13,10 @@ const SideItem: React.FC<SideItemProps> = ({ name, icon, href }) => {
   const isActive = pathname === href; // Check if the current path matches the item's href
 
   return (
-    <li className="relative group">
+    <li className="relative group lg:w-full ">
       <a
         href={href}
-        className={`text-black py-2 md:justify-center justify-center lg:justify-start px-3 rounded items-center flex
+        className={`text-black py-2 md:justify-center lg:w-full justify-center lg:justify-start px-3 rounded items-center flex
           ${isActive ? 'bg-customLightBlue' : 'hover:bg-customLightBlue'}`} // Apply active styles
       >
         <span className="text-xl lg:mr-3 m-0">{icon}</span>
