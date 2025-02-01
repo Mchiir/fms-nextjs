@@ -7,7 +7,7 @@ const Header: React.FC = () => {
       <p>Pleased that you are back 😊</p>
       <div className="mt-4">
         <button className="btn-primary">Upload Curriculum</button>
-        <button className="btn-primary ml-4">Analyze Curriculum</button>
+        <button className="btn-primary ml-4">Analyze Curr   iculum</button>
       </div>
     </div>
   );
