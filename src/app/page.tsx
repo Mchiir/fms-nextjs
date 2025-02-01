@@ -1,6 +1,7 @@
 import React from 'react'
 import Dashboard from './components/Dashboard'
 
+/**
 function page() {
   return (
     <div>
@@ -8,6 +9,7 @@ function page() {
     </div>
   )
 }
+ */
 
 const Page = () => {
   return <Dashboard />;

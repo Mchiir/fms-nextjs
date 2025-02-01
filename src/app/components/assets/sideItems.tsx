@@ -12,7 +12,7 @@ export interface SideItemType {
 export const sideItems: SideItemType[] = [
   { name: 'Dashboard', icon: <FaTachometerAlt />, href: '/' },
   { name: 'Curriculum', icon: <FaBook />, href: '/curriculum' },
-  { name: 'Students', icon: <FaUser />, href: '/students' },
+  { name: 'Students', icon: <FaUser />, href: '/Students' },
   { name: 'Chat', icon: <FaComments />, href: '/chat' },
   { name: 'Notifications', icon: <FaBell />, href: '/notifications' },
   { name: 'Schedule', icon: <FaCalendarAlt />, href: '/schedule' }, 
