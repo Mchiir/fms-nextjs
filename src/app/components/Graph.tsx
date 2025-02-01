@@ -47,7 +47,7 @@ const Graph = () => {
     maintainAspectRatio: false,
     plugins: {
       legend: {
-        position: "bottom",
+        position: "bottom" as const,
       },
     },
     scales: {
