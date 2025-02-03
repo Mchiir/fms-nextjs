@@ -10,7 +10,7 @@ export interface Item {
 const Progress: React.FC<{ item: Item }> = ({ item }) =>{    
     return(
         <>
-        <div className="w-[25%] bg-[#E6F2F9] rounded-[8px] p-5 flex items-center justify-center space-x-4 shadow-md">
+        <div className="w-[230px] bg-[#E6F2F9] rounded-[8px] p-5 flex items-center justify-center space-x-4 shadow-md">
                 <div className='flex flex-row gap-5'>
                     <PendingActionIcon fontSize="large" className="text-gray-600 text-7xl"/>
 

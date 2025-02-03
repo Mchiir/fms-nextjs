@@ -1,5 +1,8 @@
+'use client'
 import React from "react";
 import Progress, { Item } from "./Progress";
+import './styles.css'
+import Slider from 'react-slick'
 
 const ProgressList: React.FC = () =>{
     const progressList: Item[] = [
@@ -10,12 +13,14 @@ const ProgressList: React.FC = () =>{
     ]
     
     return(
-        <div className="flex flex-wrap gap-10">
-            {progressList.map((item, index)=> (
-                <Progress key={index} item={item}/>
+        <div className="flex gap-10">
+            {progressList.map((item, index) => (
+                <div key={index}>
+                <Progress item={item} />
+                </div>
             ))}
         </div>
-    )
+    );
 }
 
 export default ProgressList

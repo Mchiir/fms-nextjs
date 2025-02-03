@@ -1,15 +1,23 @@
+'use client'
 import React from "react";
 import ProgressList from "./components/ProgressList";
+import Slider from 'react-slick'
+import './components/styles.css'
+import Overall from "./components/Overall";
+import StudentHeader from "./components/StudentHeader";
+import StudentBody from "./components/StudentBody";
 
 
 
 function page(){
     return (
         <div>
-            <h1 className="text-black font-bold text-lg pb-5">Students Portal</h1>
-            <div className="flex flex-row gap-10">
+            <StudentHeader />
+            <Overall />
+            <div className="flex flex-row gap-10 mb-6">
                 <ProgressList />
             </div>
+            <StudentBody />
         </div>
     )
 }
