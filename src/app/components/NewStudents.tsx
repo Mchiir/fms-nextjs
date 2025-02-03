@@ -1,11 +1,5 @@
 import React from 'react';
 
-interface Student {
-  name: string;
-  time: string;
-  spots: string;
-}
-
 const NewStudents: React.FC = () => {
   const students: Student[] = [
     { name: 'Leandre Flicky', time: '2 days ago', spots: 'Available Spots: 224' },

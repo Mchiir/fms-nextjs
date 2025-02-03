@@ -1,10 +1,16 @@
 import React from "react";
+import ProgressList from "./components/ProgressList";
 
 
 
 function page(){
     return (
-        <div className="text-blue-500">hello dev team</div>
+        <div>
+            <h1 className="text-black font-bold text-lg pb-5">Students Portal</h1>
+            <div className="flex flex-row gap-10">
+                <ProgressList />
+            </div>
+        </div>
     )
 }
 export default page;
