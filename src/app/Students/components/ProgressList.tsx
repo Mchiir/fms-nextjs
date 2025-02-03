@@ -2,7 +2,6 @@
 import React from "react";
 import Progress, { Item } from "./Progress";
 import './styles.css'
-import Slider from 'react-slick'
 
 const ProgressList: React.FC = () =>{
     const progressList: Item[] = [
