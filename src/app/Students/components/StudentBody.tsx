@@ -2,37 +2,8 @@
 import React, { useState } from 'react'
 import profileImage from './assets/boy.png'
 
-interface Student {
-    name: string,
-    email: string,
-    progress: number
-}
-
 const StudentBody: React.FC = () =>{
 
-    const [students, setStudents] = useState<Student[]>([
-        { name: 'John Doe', email: 'john@example.com', progress: 80 },
-        { name: 'Jane Smith', email: 'jane@example.com', progress: 60 },
-        { name: 'Bob Johnson', email: 'bob@example.com', progress: 90 },
-        { name: 'Alice Williams', email: 'alice@example.com', progress: 75 },
-      ]);
-    
-      const [searchTerm, setSearchTerm] = useState('');
-      const [filterProgress, setFilterProgress] = useState<number | null>(null);
-      const [sortBy, setSortBy] = useState<'name' | 'progress'>('name');
-    
-      const filteredStudents = students.filter((student) => {
-        const nameMatch = student.name.toLowerCase().includes(searchTerm.toLowerCase());
-        const progressMatch = filterProgress === null || student.progress >= filterProgress;
-        return nameMatch && progressMatch;
-      }).sort((a, b) => {
-        if (sortBy === 'name') {
-          return a.name.localeCompare(b.name);
-        } else {
-          return b.progress - a.progress;
-        }
-    });
-    
     return (
         <div className='flex flex-row gap-5'>
             {/* Student list and nav elements */}
