@@ -1,5 +1,5 @@
 'use client'
-import React, { useState } from 'react'
+import React from 'react'
 import profileImage from './assets/boy.png'
 
 const StudentBody: React.FC = () =>{
