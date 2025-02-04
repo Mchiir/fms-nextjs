@@ -1,7 +1,5 @@
-'use client'
 import React from "react";
 import ProgressList from "./components/ProgressList";
-import './components/styles.css'
 import Overall from "./components/Overall";
 import StudentHeader from "./components/StudentHeader";
 import StudentBody from "./components/StudentBody";

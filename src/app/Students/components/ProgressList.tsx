@@ -1,7 +1,5 @@
-'use client'
 import React from "react";
 import Progress, { Item } from "./Progress";
-import './styles.css'
 
 const ProgressList: React.FC = () =>{
     const progressList: Item[] = [
