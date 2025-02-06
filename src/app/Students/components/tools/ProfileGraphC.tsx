@@ -30,7 +30,7 @@ const ProfileGraphC: React.FC = () => {
 
   const getChartData = () => {
     if (!chartRef.current) return null;
-    const chart = chartRef.current;
+    const chart = chartRef.current as unknown as { ctx: CanvasRenderingContext2D };
     const ctx = chart.ctx;
 
     return {

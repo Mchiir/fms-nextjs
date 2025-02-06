@@ -1,5 +1,4 @@
 import React from 'react'
-import SliderBar from '../SliderBar'
 import { UnfoldMore } from '@mui/icons-material'
 
 const SortC: React.FC = () =>{
