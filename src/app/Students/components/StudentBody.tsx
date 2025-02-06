@@ -2,6 +2,8 @@ import React from 'react'
 import profileImage from './assets/boy.png'
 import StudentC from './Student'
 import Image from 'next/image'
+import FilterC from './tools/FilterC'
+import SortC from './tools/SortC'
 
 const StudentBody: React.FC = () =>{
 
@@ -28,23 +30,9 @@ const StudentBody: React.FC = () =>{
                     </div>
                 </section>
 
-                    <div className='flex flex-row gap-5 font-bold'>
-                    <section>
-                    <button className="px-4 py-1 rounded-lg bg-gray-200 hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500">
-                            <span className="mr-2">Filter</span>
-                            <svg className="w-4 h-4 inline-block" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path>
-                            </svg>
-                        </button>
-                    </section>
-                    <section>
-                        <button className="px-4 py-1 rounded-lg bg-gray-200 hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500">
-                            <span className="mr-2">Sort</span>
-                            <svg className="w-4 h-4 inline-block" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 4h13M3 8h9m-9 4h6m4 0l4-4m0 0l4 4m-4-4v12"></path>
-                            </svg>
-                        </button>
-                    </section>
+                    <div className='flex flex-row gap-5'>
+                    <FilterC />
+                    <SortC />
                     </div>
                 </div>
 
