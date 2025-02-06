@@ -1,14 +1,18 @@
 import React from 'react'
 import { Slider } from '@mui/material'
 
-const SliderBar: React.FC = () =>{
+interface IProgress {
+    progress: number
+}
+
+const SliderBar: React.FC<IProgress> = ({ progress }) =>{
     return(
         <Slider
                 disabled
                 defaultValue={30}
                 aria-label="Disabled slider"
                 sx={{   
-                        width:"20%",
+                        width: `${progress}%`,
                         height: 6, // Adjusts stroke size
                         "& .MuiSlider-track": {
                         backgroundColor: "#006FFD", // Covered part (progress bar)

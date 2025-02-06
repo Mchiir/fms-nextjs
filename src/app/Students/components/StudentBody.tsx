@@ -1,6 +1,7 @@
 import React from 'react'
 import profileImage from './assets/boy.png'
 import StudentC from './Student'
+import Image from 'next/image'
 
 const StudentBody: React.FC = () =>{
 
@@ -67,7 +68,7 @@ const StudentBody: React.FC = () =>{
             {/* profile */}
             <div className='w-[30%] flex flex-col gap-10 items-center'>
                 <p className='mb-4 text-center font-bold'>Student Profile</p>
-                <img src={profileImage.src} alt="boy" className='rounded-full w-20 h-20 object-cover'/>
+                <Image src={profileImage.src} alt="boy" className='rounded-full w-20 h-20 object-cover'/>
                 <p className='font-bold'>John Doe <span className="text-gray-500 italic font-normal">Musician</span></p>
                 <p>Chartjs graph</p>
 
