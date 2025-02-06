@@ -1,10 +1,16 @@
 import React from 'react'
+import { Slider } from '@mui/material'
+import SliderBar from './SliderBar'
 
-const Overall: React.FC = () =>{
+interface OverallPercentage {
+    progress: number
+}
+
+const Overall: React.FC<OverallPercentage> = ({ progress }) =>{
     return(
         <div>
             <p className="text-0.5xl mb-2">Overall progress</p>
-            <div className="w-[20%] h-2 rounded-full bg-blue-700 mb-4"></div>
+            <SliderBar />
         </div>
     )
 }

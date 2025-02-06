@@ -8,7 +8,7 @@ function page(){
     return (
         <div>
             <StudentHeader />
-            <Overall />
+            <Overall progress={20}/>
             <div className="flex flex-row gap-10 mb-6">
                 <ProgressList />
             </div>

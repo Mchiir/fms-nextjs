@@ -1,6 +1,6 @@
-'use client'
 import React from 'react'
 import profileImage from './assets/boy.png'
+import StudentC from './Student'
 
 const StudentBody: React.FC = () =>{
 
@@ -47,20 +47,20 @@ const StudentBody: React.FC = () =>{
                     </div>
                 </div>
 
-                <div className='flex justify-between mb-3'>
-                    <p className='font-bold text-lg'>Students List</p>
+                <div className='flex justify-between m-5'>
+                    <p className='font-bold text-xl'>Students List</p>
                     <button type='button'
                     className='bg-[#1782CF] rounded-lg px-3 py-1 text-white'
                     >+ Add Student</button>
                 </div>
 
-                <section className='flex flex-col gap-2'>
-                    <div><p className='text-lg'>Student1</p></div>
-                    <div><p className='text-lg'>Student2</p></div>
-                    <div><p className='text-lg'>Student3</p></div>
-                    <div><p className='text-lg'>Student4</p></div>
-                    <div><p className='text-lg'>Student5</p></div>
-                    <div><p className='text-lg'>Student6</p></div>
+                <section className='flex flex-col gap-2 border-[1px] border-[#C1C1C1] rounded-md py-[20px] px-[20px]'>
+                    <StudentC />
+                    <StudentC />
+                    <StudentC />
+                    <StudentC />
+                    <StudentC />
+                    <StudentC />
                 </section>
             </div>
 
@@ -84,8 +84,8 @@ const StudentBody: React.FC = () =>{
                 </div>
 
                 <div className='flex flex-row gap-5'>
-                    <button type='button' className='rounded-lg bg-[#1782CF] px-3 py-1'>Message</button>
-                    <button type='button' className='rounded-lg bg-red-600 px-3 py-1'>Remove</button>
+                    <button type='button' className='rounded-lg bg-[#1782CF] px-3 py-1 text-white'>Message</button>
+                    <button type='button' className='rounded-lg bg-[red] px-3 py-1 text-white'>Remove</button>
                 </div>
             </div>
         </div>
