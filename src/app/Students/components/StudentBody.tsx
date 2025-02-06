@@ -55,7 +55,7 @@ const StudentBody: React.FC = () =>{
                     >+ Add Student</button>
                 </div>
 
-                <section className='flex flex-col gap-2 border-[1px] border-[#C1C1C1] rounded-md py-[20px] px-[20px]'>
+                <section className='flex flex-col gap-2 border-[1px] border-[#C1C1C1] rounded-md py-[20px] px-[20px] overflow-y-scroll max-h-[10cm]'>
                     <StudentC />
                     <StudentC />
                     <StudentC />
@@ -68,7 +68,7 @@ const StudentBody: React.FC = () =>{
             {/* profile */}
             <div className='w-[30%] flex flex-col gap-10 items-center'>
                 <p className='mb-4 text-center font-bold'>Student Profile</p>
-                <Image src={profileImage.src} alt="boy" className='rounded-full w-20 h-20 object-cover'/>
+                <Image src={profileImage.src} alt="boy" width={130} height={130} priority className='rounded-full object-cover'/>
                 <p className='font-bold'>John Doe <span className="text-gray-500 italic font-normal">Musician</span></p>
                 <p>Chartjs graph</p>
 

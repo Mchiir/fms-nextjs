@@ -10,7 +10,7 @@ const ProgressList: React.FC = () =>{
     ]
     
     return(
-        <div className="flex gap-10">
+        <div className="flex gap-10 w-screen">
             {progressList.map((item, index) => (
                 <div key={index}>
                 <Progress item={item} />

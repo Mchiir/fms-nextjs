@@ -12,7 +12,11 @@ const Progress: React.FC<{ item: Item }> = ({ item }) =>{
         <>
         <div className="cursor-context-menu w-[230px] bg-[#E6F2F9] rounded-[8px] p-5 flex items-center justify-center space-x-4 shadow-md">
                 <div className='flex flex-row gap-5'>
-                    <PendingActionIcon fontSize="large" className="text-gray-600 text-7xl"/>
+                    <PendingActionIcon 
+                    sx={{
+                        fontSize:"4.5rem"
+                    }}
+                    className="text-gray-600"/>
 
                     <article className="text-left">
                         <p className="text-orange-500 text-3xl font-bold">{item.count}</p>
