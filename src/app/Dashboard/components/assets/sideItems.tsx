@@ -1,5 +1,5 @@
 // sideItems.tsx
-import { FaTachometerAlt, FaBook, FaUser, FaComments,FaCalendarAlt, FaCogs, FaBell, FaSignOutAlt } from 'react-icons/fa';
+import { FaBookOpen, FaTachometerAlt, FaBook, FaUser, FaComments,FaCalendarAlt, FaCogs, FaBell, FaSignOutAlt } from 'react-icons/fa';
 import { ReactNode } from 'react';
 
 // Define the type for each sidebar item
@@ -13,6 +13,7 @@ export const sideItems: SideItemType[] = [
   { name: 'Dashboard', icon: <FaTachometerAlt />, href: '/' },
   { name: 'Curriculum', icon: <FaBook />, href: '/curriculum' },
   { name: 'Students', icon: <FaUser />, href: '/Students' },
+  { name: 'Teachers', icon: <FaBookOpen />, href: '/Teachers' },
   { name: 'Chat', icon: <FaComments />, href: '/chat' },
   { name: 'Notifications', icon: <FaBell />, href: '/notifications' },
   { name: 'Schedule', icon: <FaCalendarAlt />, href: '/schedule' }, 

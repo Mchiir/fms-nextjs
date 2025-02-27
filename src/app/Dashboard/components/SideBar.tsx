@@ -1,7 +1,7 @@
 // SideBar.tsx
 import React from 'react';
 import Image from 'next/image';
-import Logo from '../components/assets/Smart.png'
+import Logo from './assets/Smart.png'
 import { sideItems } from './assets/sideItems';
 import SideItem from './SideItem';
 

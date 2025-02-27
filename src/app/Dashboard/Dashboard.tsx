@@ -1,10 +1,10 @@
 import React from 'react';
-import Header from './Header';
-import PerformanceMetrics from './PerformanceMetrics';
-import WorkRateChart from './WorkRateChart';
-import NewStudents from './NewStudents';
-import Schedule from './Schedule';
-import Calendar from './Calendar';
+import Header from './components/Header';
+import PerformanceMetrics from './components/PerformanceMetrics';
+import WorkRateChart from './components/WorkRateChart';
+import NewStudents from './components/NewStudents';
+import Schedule from './components/Schedule';
+import Calendar from './components/Calendar';
 
 const Dashboard: React.FC = () => {
   return (
